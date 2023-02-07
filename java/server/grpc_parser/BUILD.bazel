@@ -1,0 +1,12 @@
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "grpc_parser",
+    srcs = [
+        "Parser.kt",
+    ],
+    visibility = [
+        "//java/server/grpc_parser:__subpackages__",
+        "//javatests/server:__subpackages__",
+    ],
+)
