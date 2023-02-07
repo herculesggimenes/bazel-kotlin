@@ -6,7 +6,7 @@ kt_jvm_library(
         "Parser.kt",
     ],
     visibility = [
-        "//java/server/grpc_parser:__subpackages__",
+        "//java/server:__subpackages__",
         "//javatests/server:__subpackages__",
     ],
 )
